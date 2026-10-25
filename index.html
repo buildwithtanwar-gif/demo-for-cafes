@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#17120f" />
+  <title>Maison Café — A Little Pause</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="loader-mark">m<span>.</span></div>
+    <p>Brewing something lovely</p>
+    <div class="loader-line"><span></span></div>
+  </div>
+
+  <div class="cinematic-intro" id="cinematicIntro" aria-label="Maison Cafe cinematic introduction">
+    <div class="intro-orb"></div>
+    <p class="intro-overline">A SMALL PAUSE IN A LOUD WORLD</p>
+    <div class="intro-title"><span>maison</span><em>café</em></div>
+    <div class="intro-rule"><span></span></div>
+    <p class="intro-bottom">POURING MOMENTS, NOT JUST COFFEE</p>
+    <button class="intro-skip" id="introSkip" type="button">SKIP INTRO ↗</button>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="#home"><span class="brand-icon">m</span><span>maison<span class="brand-light"> café</span></span></a>
+    <nav id="navLinks">
+      <a href="#story">Our story</a><a href="#menu">The menu</a><a href="#space">The space</a>
+    </nav>
+    <a class="nav-cta" href="#visit">Come say hi <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grain"></div>
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="eyebrow-dot"></span> YOUR NEIGHBOURHOOD HIDEAWAY</p>
+        <h1 class="reveal">Slow mornings.<br><em>Good coffee.</em><br>A little magic.</h1>
+        <p class="hero-sub reveal">A cozy corner for your first sip, your best ideas, and the moments in between.</p>
+        <div class="hero-actions reveal">
+          <a href="#menu" class="button button-light">Explore the menu <span>↗</span></a>
+          <a href="#story" class="text-link">Get to know us <span>↓</span></a>
+        </div>
+        <div class="hero-note reveal"><span class="note-line"></span><span>MADE SLOWLY, SERVED WARMLY</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrap">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1400&q=85" alt="Freshly brewed coffee on a cafe table">
+          <div class="image-stamp"><span>EST.</span><strong>20<br>24</strong><span>WITH LOVE</span></div>
+        </div>
+        <div class="floating-card">
+          <span class="floating-icon">✳</span>
+          <div><strong>Your daily ritual</strong><small>One cup at a time.</small></div>
+        </div>
+        <div class="hero-side-label">COFFEE · COMMUNITY · COMFORT</div>
+      </div>
+      <a class="scroll-cue" href="#story"><span></span> SCROLL TO SLOW DOWN</a>
+    </section>
+
+    <section class="ticker" aria-label="Cafe values"><div class="ticker-track">
+      <span>GOOD COFFEE</span><b>✳</b><span>FRESHLY BAKED</span><b>✳</b><span>MADE WITH HEART</span><b>✳</b><span>STAY A LITTLE LONGER</span><b>✳</b>
+      <span>GOOD COFFEE</span><b>✳</b><span>FRESHLY BAKED</span><b>✳</b><span>MADE WITH HEART</span><b>✳</b><span>STAY A LITTLE LONGER</span><b>✳</b>
+    </div></section>
+
+    <section class="story section-pad" id="story">
+      <div class="story-image reveal">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85" alt="Warm and inviting cafe interior">
+        <div class="image-caption">A PLACE TO EXHALE <span>—</span> SINCE DAY ONE</div>
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow reveal">A LITTLE ABOUT US</p>
+        <h2 class="reveal">Not just coffee.<br><em>A feeling.</em></h2>
+        <p class="body-copy reveal">We believe the best things happen when you give them time. From carefully pulled espresso to pastries made fresh each morning, every detail is an invitation to pause, connect, and enjoy the moment.</p>
+        <a class="under-link reveal" href="#space">Step inside <span>↗</span></a>
+        <div class="story-number reveal"><strong>01</strong><span>GOOD THINGS TAKE<br>A LITTLE TIME</span></div>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading">
+        <div><p class="eyebrow reveal">A FEW HOUSE FAVOURITES</p><h2 class="reveal">Made to be <em>sipped.</em></h2></div>
+        <p class="heading-note reveal">Simple ingredients.<br>Beautiful little moments.</p>
+      </div>
+      <div class="menu-filters reveal" role="group" aria-label="Filter menu">
+        <button class="filter-chip active" data-filter="all">All favourites</button>
+        <button class="filter-chip" data-filter="coffee">Coffee bar</button>
+        <button class="filter-chip" data-filter="bites">Bakery & bites</button>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card reveal" data-category="coffee"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85" alt="Iced latte"><span class="menu-tag">HOUSE FAVOURITE</span><span class="menu-index">01</span></div><div class="menu-info"><div><h3>Brown Sugar Latte</h3><p>Double espresso, silky milk, brown sugar</p></div><strong>₹220</strong></div></article>
+        <article class="menu-card reveal" data-category="coffee"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85" alt="Cup of cappuccino"><span class="menu-index">02</span></div><div class="menu-info"><div><h3>Velvet Cappuccino</h3><p>Rich espresso, soft foam, cocoa dust</p></div><strong>₹180</strong></div></article>
+        <article class="menu-card reveal" data-category="bites"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85" alt="Fresh bakery pastry"><span class="menu-index">03</span></div><div class="menu-info"><div><h3>Butter Croissant</h3><p>Flaky, golden, baked fresh daily</p></div><strong>₹160</strong></div></article>
+      </div>
+      <p class="demo-disclaimer">Demo menu & pricing for presentation purposes. Replace with the cafe's actual menu.</p>
+    </section>
+
+    <section class="quote-band"><div class="quote-mark">“</div><blockquote>There is always time<br>for <em>one more cup.</em></blockquote><p>— OUR KIND OF PHILOSOPHY —</p><div class="quote-orbit"></div></section>
+
+    <section class="space-section section-pad" id="space">
+      <div class="space-copy"><p class="eyebrow reveal">YOUR NEW FAVOURITE CORNER</p><h2 class="reveal">Come for the coffee.<br><em>Stay for the calm.</em></h2><p class="body-copy reveal">Bring a book, bring a friend, or bring absolutely nothing. There's a seat waiting for you.</p><a href="#visit" class="button button-dark reveal">Find your way here <span>↗</span></a></div>
+      <div class="space-gallery"><div class="gallery-main reveal"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=85" alt="Sunlit cafe interior"><span>YOUR SLOW SPACE</span></div><div class="gallery-small reveal"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=85" alt="Coffee being prepared"><span>THE DAILY RITUAL</span></div></div>
+    </section>
+
+    <section class="visit-section" id="visit"><div class="visit-inner"><p class="eyebrow reveal">THE DOOR IS OPEN</p><h2 class="reveal">Your table is<br><em>waiting.</em></h2><p class="visit-copy reveal">Drop by for a coffee, a catch-up, or a quiet moment to yourself.</p><div class="visit-details reveal"><div><small>FIND US</small><strong>12, The Little Lane<br>Your City, India</strong></div><div><small>WHEN WE'RE HERE</small><strong>Mon – Sun<br>9:00 AM – 9:00 PM</strong></div></div><a class="button button-light reveal" href="https://wa.me/" target="_blank" rel="noreferrer">Message the café <span>↗</span></a><p class="demo-disclaimer light-disclaimer">Demo address and hours — update before publishing.</p></div><div class="visit-decoration">M<br>A<br>I<br>S<br>O<br>N</div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-icon">m</span><span>maison<span class="brand-light"> café</span></span></a><p>Made with a little extra love <span>✳</span></p><a href="#home">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
